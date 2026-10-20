@@ -39,3 +39,6 @@ esp32/config.json
 
 # TensorFlow
 logs/
+/data
+/esp32
+/models

@@ -2,6 +2,17 @@
 
 A complete Python pipeline for training, quantizing, and deploying tiny image classification models on **ESP32-S3** using **MicroPython + TFLite Micro**.
 
+## TL;DR Quickstart
+
+| Step | Command | What it does |
+| :--- | :--- | :--- |
+| 0 | `uv run python scripts/generate_demo_data.py` | Generate synthetic test images (circles/squares/triangles)
+| 1 | `uv run tinyml-prepare` | Split your images into train/val sets
+| 2 | `uv run tinyml-train` | Train the tiny CNN (~5 KB model)
+| 3 | `uv run tinyml-convert` | Convert to INT8 quantized TFLite
+| 4 | `uv run tinyml-evaluate --tflite` | Verify quantization didn't hurt accuracy
+| 5 | `uv run tinyml-export` | Generate all ESP32-S3 MicroPython files
+
 ## Architecture
 
 ```
