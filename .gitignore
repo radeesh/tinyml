@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+
+# uv
+.python-version
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Data & Models (large files — don't commit to git)
+data/train/
+data/val/
+data/test/
+models/*.keras
+models/*.tflite
+models/*.h5
+models/training_history.json
+
+# ESP32 generated files
+esp32/model.tflite
+esp32/config.json
+
+# Jupyter
+.ipynb_checkpoints/
+
+# TensorFlow
+logs/
